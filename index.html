@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" href="mystyle.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="shortcut icon" href="icon3.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <div class="header">
+            <h1> Hi ! Im here</h1>
+            <h1>I hope u enjoy and stay at My website</h1>
+        </div>
+        
+        <nav class="nav-extended yellow accent-3 mynav">
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo">My Home</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+                <li><a href="portofolio.html"><i class="material-icons left">view_module</i>Portofolio</a></li>
+              </ul>
+            </div>
+          </nav>
+          <ul class="sidenav yellow accent-3" id="mobile-demo">
+            <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+            <li><a href="portofolio.html"><i class="material-icons left">view_module</i>Portofolio</a></li>
+          </ul>
+
+<div class="container mycontainer hoverable">
+    <div class="row">
+        <div class="col s12 xl6">
+            <img src="1.jpg" alt="">
+        </div>
+        <div class="col s12 xl6 mybio">
+                <h3>My name is Febrianus Sandy Sukma, usually called Sandy. 
+                    <br><br> I live in Bekasi, born February 25, 1997. 
+                    <br><br>I am a Bachelor of Computer Engineering at Telkom University. 
+                    <br><br>I am currently studying website development properly and correctly, 
+                    precisely in the Front End. The programming languages that 
+                    <br><br>I understand are HTML5, CSS and Javascript.
+                </h3>
+        <div class="sosmed">
+            <ul>
+                <li><a class="pulse btn-large" href="">IG</a></li>
+                <li><a class="pulse btn-large" href="">FB</a></li>
+                <li><a class="pulse btn-large" href="https://www.linkedin.com/in/febrianus-sandy-sukma/">LINKEDIN</a></li>
+            </ul>
+        </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="slideshow-container hoverable">
+    <h4 class="mycertificate">My Certificate</h4>
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="0001.jpg" style="width:100%">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="sertifikat Progate-1.jpg" style="width:100%">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="Febrianus Sandy Sukma (3)-1.jpg" style="width:100%">
+      
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+     
+  <footer class="page-footer myfooter">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text"><i class="material-icons left">account_circle</i>About Me</h5>
+          <p class="grey-text text-lighten-4"><i class="material-icons left">pin_drop</i>Location</p>
+          <p>Alinda Kencana Permai Blok O4 No 17, Kaliabang Tengah, Bekasi Utara.</p>
+          <p class="grey-text text-lighten-4"><i class="material-icons left">email</i>Any Question ?</p>
+          <p><a href="mailto:sandysukma70@gmail.com">sandysukma70@gmail.com</a></p>
+        </div>
+        <div class="col l4 offset-l2 s12 mylink">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="My CV.pdf" download><i class="material-icons">file_download</i>Download My Resume</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/sandy.teshka.1"><i class="material-icons ">person_add</i>Follow FB</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://instagram.com/sandyteshka8?igshid=qti5wgqyj9gc"><i class="material-icons ">camera_alt</i>Follow IG</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2020 Copyright
+      <a class="grey-text text-lighten-4 right" href="#!">Sandy Website</a>
+      </div>
+    </div>
+  </footer>
+      
+
+
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script>
+         var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+     </script>
+    </body>
+  </html>
+        
