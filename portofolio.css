@@ -1,0 +1,80 @@
+
+  body {
+    background-color: #d50000 ;
+    font-family: Arial;
+  }
+  .header {
+   
+    height: 200px;
+}
+
+.mynav .nav-wrapper a {
+    color: #d50000;
+}
+
+.header h1 {
+    text-align: center;
+    padding-top: 20px;
+    color: #ffea00;
+}
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+    color: #ffea00;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color:  #ffea00;
+    padding: 10px;
+    color: #d50000 ;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+  }
